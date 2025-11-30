@@ -1,58 +1,41 @@
-# Landing Page Comercial — Template Profissional
-### By ED Art&Mídia
+# Landing Page Comercial – Template Universal
 
-Template de landing page moderno para comércios, prestadores de serviços e negócios locais que desejam vender mais através da internet com um site simples, rápido e focado em conversão.
+Template profissional de landing page desenvolvido para pequenos negócios e comércios que desejam presença online rápida, bonita e funcional, sem depender de plataformas caras ou mensalidades abusivas.
 
----
-
-## ✅ Recursos do Template
-
-- ✅ Design moderno e responsivo
-- ✅ Logo do comércio no topo
-- ✅ Galeria de produtos
-- ✅ Botões flutuantes de WhatsApp e Instagram
-- ✅ Formulário de contato integrado ao WhatsApp
-- ✅ Seção "Sobre o negócio"
-- ✅ Bloco "Quem está por trás da empresa" (humanização)
-- ✅ Área de depoimentos
-- ✅ Mobile menu automático
-- ✅ Sem dependências externas
-- ✅ 100% HTML, CSS e JavaScript puro
+O projeto permite a personalização completa apenas alterando:
+- Logo do comércio
+- Nome e descrição da empresa
+- Informações de contato
+- Endereço e horário de funcionamento
+- 4 imagens fixas de galeria
+- 3 imagens do carrossel de destaque
+- Links de WhatsApp e Instagram
 
 ---
 
-## ✅ Preview Online
+## 📌 Funcionalidades
 
-🔗 **Veja o template funcionando:**
-https://SEU_USUARIO.github.io/landing-page-comercio-template/
-
----
-
-## ✅ Para quem é este template?
-
-Ideal para:
-
-- Lojas de bairro
-- Prestadores de serviço
-- Barbearias
-- Restaurantes e lanchonetes
-- Estéticas e salões de beleza
-- Profissionais autônomos
-- Pequenos comércios em geral
+✅ Layout moderno e responsivo (Desktop, Tablet e Mobile)  
+✅ Menu fixo com navegação por seções  
+✅ Hero com chamada de ação para WhatsApp  
+✅ Galeria com 4 imagens fixas  
+✅ Carrossel de imagens em JavaScript puro  
+✅ Seção "Informações do Comércio"  
+✅ Seção "Quem Somos"  
+✅ Área de depoimentos fictícios  
+✅ Formulário de contato integrado ao WhatsApp  
+✅ Botões flutuantes de WhatsApp e Instagram  
+✅ Código leve, limpo e de fácil personalização  
 
 ---
 
-## ✅ Como usar
+## 🧩 Tecnologias Utilizadas
 
-1. Faça download do projeto
-2. Edite o arquivo `index.html`:
-   - Altere o nome do negócio
-   - Substitua textos
-   - Atualize o número do WhatsApp
-3. Troque as imagens da pasta `/img`
-4. Hospede gratuitamente via **GitHub Pages**
+- HTML5
+- CSS3
+- JavaScript puro (sem bibliotecas externas)
 
 ---
 
-## ✅ Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
