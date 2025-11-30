@@ -3,114 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loja Exemplo • ED Art&Mídia</title>
+<title>Modelo Landing Page Comercial</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="header">
   <div class="container header-inner">
-    <img src="img/logo.png" class="logo" alt="Logo da Loja">
+    <img src="img/logo.png" class="logo" alt="Logo do Comércio">
 
     <nav>
       <a href="#hero">Início</a>
-      <a href="#products">Produtos</a>
-      <a href="#testimonials">Depoimentos</a>
-      <a href="#about">Sobre</a>
+      <a href="#gallery">Galeria</a>
+      <a href="#carousel">Carrossel</a>
+      <a href="#pricing">Pacotes</a>
       <a href="#contact">Contato</a>
     </nav>
   </div>
 </header>
 
+<!-- HERO -->
 <section id="hero" class="hero">
   <div class="container hero-grid">
+
     <div class="copy">
-      <h1>Produtos que encantam o seu dia a dia</h1>
-      <p>Entrega rápida • Qualidade garantida • Atendimento humano</p>
+      <h1>Nome do Comércio</h1>
+      <p>Especialistas em qualidade • Atendimento rápido • Entrega local</p>
 
-      <a href="https://wa.me/5513996305218" class="btn btn-primary">Comprar pelo WhatsApp</a>
-      <a href="#products" class="btn">Ver produtos</a>
+      <a href="https://wa.me/5513999999999" class="btn btn-primary">Fale pelo WhatsApp</a>
+      <a href="#gallery" class="btn">Ver galeria</a>
     </div>
 
-    <img src="img/hero-product.jpg" class="hero-img">
+    <img src="img/hero.jpg" class="hero-img" alt="Imagem destaque">
   </div>
 </section>
 
-<section id="products" class="section">
-  <h2>Produtos em Destaque</h2>
+<!-- GALERIA FIXA -->
+<section id="gallery" class="section">
+<h2>Galeria de Produtos / Ambiente</h2>
 
-  <div class="products-grid">
-
-    <div class="product">
-      <img src="img/pepsi.jpg">
-      <h3>Refrigerante lata</h3>
-      <p>Sempre gelado.</p>
-      <span>R$ 5,00</span>
-      <a href="https://wa.me/5513996305218" class="btn-small">Comprar</a>
-    </div>
-
-    <div class="product">
-      <img src="img/cafe.jpg">
-      <h3>Café expresso</h3>
-      <p>Para começar bem o seu dia.</p>
-      <span>R$ 3,00</span>
-      <a href="https://wa.me/5513996305218" class="btn-small">Comprar</a>
-    </div>
-
-    <div class="product">
-      <img src="img/perfume.jpg">
-      <h3>Colônia</h3>
-      <p>A fragância que te identifica.</p>
-      <span>R$ 129,90</span>
-      <a href="https://wa.me/5513996305218" class="btn-small">Comprar</a>
-    </div>
-
-    <div class="product">
-      <img src="img/creme.jpg">
-      <h3>Cuidados para sua pele</h3>
-      <p>Proteção para o seu dia a dia.</p>
-      <span>R$ 39,90</span>
-      <a href="https://wa.me/5513996305218" class="btn-small">Comprar</a>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" class="testimonials">
-  <h2>Depoimentos</h2>
-
-  <div class="testimonial-grid">
-    <blockquote>“Atendimento excelente! Recomendo.”</blockquote>
-    <blockquote>“Entrega rápida e produto ótimo.”</blockquote>
-    <blockquote>“Comprei e chegou no mesmo dia.”</blockquote>
-  </div>
-</section>
-
-<section id="about" class="section about">
-<div class="container about-grid">
-
-  <div>
-    <h2>Sobre a Loja</h2>
-    <p>Sou Edson, trabalho com design e tecnologia ajudando pequenos negócios a venderem mais com comunicação profissional acessível.</p>
-  </div>
-
-  <div class="founder">
-    <img src="img/owner.jpg">
-    <p><strong>Edson</strong><br>Fundador</p>
-  </div>
-
+<div class="gallery-grid">
+  <img src="img/cafe.jpg">
+  <img src="img/pepsi.jpg">
+  <img src="img/creme.jpg">
+  <img src="img/perfume.jpg">
 </div>
 </section>
 
+<!-- CARROSSEL -->
+<section id="carousel" class="carousel">
+<h2>Galeria em Destaque</h2>
+
+<div class="carousel-box">
+  <button class="carousel-btn" onclick="prev()">❮</button>
+
+  <img id="slide" src="img/cafe.jpg" class="carousel-img">
+
+  <button class="carousel-btn" onclick="next()">❯</button>
+</div>
+
+<p class="carousel-info">
+✅ Pacote básico do carrossel: <strong>3 imagens — R$100,00</strong><br>
+➕ Imagem extra: <strong>R$30,00 por unidade</strong>
+</p>
+</section>
+
+<!-- VALORES -->
+<section id="pricing" class="section pricing">
+<h2>Valores de Personalização</h2>
+
+<ul>
+<li>✔️ Inclusos: logo + textos + 4 imagens fixas</li>
+<li>✔️ Criação de carrossel (3 imagens): <strong>R$100,00</strong></li>
+<li>✔️ Cada imagem adicional no carrossel: <strong>+R$30,00</strong></li>
+<li>✔️ Página responsiva + botões WhatsApp/Instagram</li>
+<li>✔️ Publicação online</li>
+</ul>
+</section>
+
+<!-- CONTATO -->
 <section id="contact" class="section contact">
-<h2>Fale Conosco</h2>
+<h2>Solicite a sua Landing Page</h2>
 
 <form>
-  <input type="text" placeholder="Seu nome" required>
-  <input type="tel" placeholder="WhatsApp" required>
-  <textarea placeholder="Mensagem"></textarea>
-  <button class="btn btn-primary">Enviar pelo WhatsApp</button>
-</form>
+  <input type="text" placeholder="Nome">
+  <input type="tel" placeholder="WhatsApp">
+  <textarea placeholder="Conte-nos sobre seu negócio"></textarea>
 
+  <a href="https://wa.me/5513999999999" class="btn btn-primary">
+    Solicitar orçamento pelo WhatsApp
+  </a>
+</form>
 </section>
 
 <footer class="footer">
@@ -118,8 +101,28 @@
 </footer>
 
 <!-- BOTÕES FLUTUANTES -->
-<a class="float-btn whatsapp" href="https://wa.me/5513996305218" target="_blank">Whats</a>
+<a class="float-btn whatsapp" href="https://wa.me/5513999999999" target="_blank">Whats</a>
 <a class="float-btn instagram" href="https://instagram.com/seuperfil" target="_blank">Insta</a>
+
+<script>
+let images = [
+  "img/cafe.jpg",
+  "img/perfume.jpg",
+  "img/creme.jpg"
+];
+
+let i = 0;
+
+function next(){
+  i = (i+1) % images.length;
+  document.getElementById("slide").src = images[i];
+}
+
+function prev(){
+  i = (i-1 + images.length) % images.length;
+  document.getElementById("slide").src = images[i];
+}
+</script>
 
 </body>
 </html>
