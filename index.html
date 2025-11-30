@@ -1,205 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Landing Page - Seu Negócio</title>
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Botões fixos redes sociais */
-    .fixed-btn {
-    position: fixed;
-    bottom: 20px;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1000;
-  }
-  .fixed-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
-  }
-  .whatsapp-btn {
-    right: 90px;
-    background-color: #25d366;
-  }
-  .instagram-btn {
-    right: 20px;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  }
-  svg {
-    width: 28px;
-    height: 28px;
-    fill: white;
-  }
-  </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja Exemplo • ED Art&Mídia</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Cabeçalho -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Sua Marca</h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#beneficios" class="hover:text-blue-500">Benefícios</a></li>
-          <li><a href="#impacto" class="hover:text-blue-500">Impacto</a></li>
-          <li><a href="#depoimentos" class="hover:text-blue-500">Depoimentos</a></li>
-          <li><a href="#contato" class="hover:text-blue-500">Contato</a></li>
-        </ul>
-      </nav>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <img src="img/logo.png" class="logo" alt="Logo da Loja">
+
+    <nav>
+      <a href="#hero">Início</a>
+      <a href="#products">Produtos</a>
+      <a href="#testimonials">Depoimentos</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <div class="container hero-grid">
+    <div class="copy">
+      <h1>Produtos que encantam o seu dia a dia</h1>
+      <p>Entrega rápida • Qualidade garantida • Atendimento humano</p>
+
+      <a href="https://wa.me/5513996305218" class="btn btn-primary">Comprar pelo WhatsApp</a>
+      <a href="#products" class="btn">Ver produtos</a>
     </div>
-  </header>
 
-  <!-- Seção Hero -->
-  <section class="bg-blue-600 text-white py-20">
-    <div class="container mx-auto text-center px-4">
-      <h2 class="text-4xl font-bold mb-4">Alcance o Sucesso Online</h2>
-      <p class="mb-8 text-lg">Aumente sua visibilidade e converta visitantes em clientes.</p>
-      <a href="#contato" class="bg-white text-blue-600 py-3 px-6 rounded-full font-semibold hover:bg-gray-200 transition">Saiba Mais</a>
+    <img src="img/hero-product.jpg" class="hero-img">
+  </div>
+</section>
+
+<section id="products" class="section">
+  <h2>Produtos em Destaque</h2>
+
+  <div class="products-grid">
+
+    <div class="product">
+      <img src="img/pepsi.jpg">
+      <h3>Refrigerante lata</h3>
+      <p>Sempre gelado.</p>
+      <span>R$ 5,00</span>
+      <a href="https://wa.me/5513996305218" class="btn-small">Comprar</a>
     </div>
-  </section>
 
-  <!-- Seção Benefícios -->
-  <section id="beneficios" class="py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-12">O que oferecemos</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow card">
-          <h4 class="text-xl font-bold mb-2">Design Responsivo</h4>
-          <p>Seu site será visualizado perfeitamente em qualquer dispositivo, proporcionando uma navegação fluida.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow card">
-          <h4 class="text-xl font-bold mb-2">Alta Performance</h4>
-          <p>Sites otimizados com estrutura moderna, carregamento rápido e organização técnica que favorece os motores de busca.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow card">
-          <h4 class="text-xl font-bold mb-2">Suporte Técnico Especializado</h4>
-          <p>Conte com suporte contínuo para ajustes e melhorias, com atendimento ágil e dedicado.</p>
-        </div>
-      </div>
+    <div class="product">
+      <img src="img/cafe.jpg">
+      <h3>Café expresso</h3>
+      <p>Para começar bem o seu dia.</p>
+      <span>R$ 3,00</span>
+      <a href="https://wa.me/5513996305218" class="btn-small">Comprar</a>
     </div>
-  </section>
 
-  <!-- Seção Informações Comerciais -->
-  <section class="bg-gray-100 py-12">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-6">Nossos Serviços e Valores</h3>
-      <ul class="text-lg space-y-3 text-gray-700 max-w-md mx-auto">
-        <li><strong>Criação de sites:</strong> Entrega em até 7 dias úteis, valores a partir de <span class="text-blue-600 font-semibold">R$250,00</span>.</li>
-        <li><strong>Criação de logos:</strong> A partir de <span class="text-blue-600 font-semibold">R$50,00</span>.</li>
-        <li><strong>Manutenções e atualizações:</strong> Semanais ou mensais, valores a combinar conforme necessidade.</li>
-      </ul>
+    <div class="product">
+      <img src="img/perfume.jpg">
+      <h3>Colônia</h3>
+      <p>A fragância que te identifica.</p>
+      <span>R$ 129,90</span>
+      <a href="https://wa.me/5513996305218" class="btn-small">Comprar</a>
     </div>
-  </section>
 
-  <!-- Seção Impacto Resumido -->
-  <section id="impacto" class="py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-8">Impactos Positivos do Site no Seu Negócio</h3>
-      <p class="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed mb-6">
-        Ter um site profissional aumenta significativamente a credibilidade da sua empresa e expande seu alcance para clientes em potencial, contribuindo para o crescimento das vendas e do faturamento. Estudos comprovam que empresas com presença digital estruturada registram até 50% mais conversões em seus canais de vendas.
-      </p>
-      <p class="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed mb-6 italic text-center">
-        Exemplo real 1: A <strong>Magazine Luiza</strong> investiu em melhorias constantes em seu e-commerce, aumentando em mais de 40% suas vendas online no primeiro ano após a reformulação do site.<br />
-        Exemplo real 2: O <strong>iFood</strong> viu crescimento exponencial após otimização do site e aplicativo, tornando-se líder no mercado de delivery digital no Brasil.
-      </p>
-      <p class="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed text-center">
-        Invista no seu site para transformar sua presença digital em resultados reais e duradouros.
-      </p>
+    <div class="product">
+      <img src="img/creme.jpg">
+      <h3>Cuidados para sua pele</h3>
+      <p>Proteção para o seu dia a dia.</p>
+      <span>R$ 39,90</span>
+      <a href="https://wa.me/5513996305218" class="btn-small">Comprar</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Seção Depoimentos -->
-  <section id="depoimentos" class="bg-gray-100 py-16">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <h3 class="text-3xl font-bold text-center mb-12">O que dizem nossos clientes</h3>
-      <div class="space-y-8">
-        <blockquote class="bg-white p-6 rounded-lg shadow">
-          <p class="italic">“O site transformou completamente a forma como meus clientes interagem com meu negócio.”</p>
-          <cite class="block text-right mt-4 font-semibold">- Cliente Satisfeito</cite>
-        </blockquote>
-        <blockquote class="bg-white p-6 rounded-lg shadow">
-          <p class="italic">“Investir em uma landing page foi a melhor decisão para nossa estratégia de marketing.”</p>
-          <cite class="block text-right mt-4 font-semibold">- Empreendedor(a)</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+<section id="testimonials" class="testimonials">
+  <h2>Depoimentos</h2>
 
-  <!-- Seção Contato -->
-  <section id="contato" class="py-16">
-    <div class="container mx-auto px-4 max-w-lg">
-      <h3 class="text-3xl font-bold text-center mb-12">Entre em Contato</h3>
-      <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow">
-        <div class="mb-4">
-          <label for="nome" class="block text-gray-700 font-semibold mb-2">Nome</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
-            placeholder="Seu nome"
-            required
-          />
-        </div>
-        <div class="mb-4">
-          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
-            placeholder="Seu email"
-            required
-          />
-        </div>
-        <div class="mb-4">
-          <label for="mensagem" class="block text-gray-700 font-semibold mb-2">Mensagem</label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            rows="4"
-            class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
-            placeholder="Sua mensagem"
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          class="w-full bg-blue-600 text-white p-3 rounded font-semibold hover:bg-blue-700 transition"
-        >
-          Enviar
-        </button>
-      </form>
-    </div>
-  </section>
+  <div class="testimonial-grid">
+    <blockquote>“Atendimento excelente! Recomendo.”</blockquote>
+    <blockquote>“Entrega rápida e produto ótimo.”</blockquote>
+    <blockquote>“Comprei e chegou no mesmo dia.”</blockquote>
+  </div>
+</section>
 
-  <!-- Rodapé -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto px-4 text-center">
-      <p>© 2025 Sua Marca. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+<section id="about" class="section about">
+<div class="container about-grid">
 
-  <!-- Botões fixos WhatsApp e Instagram -->
-  <a href="https://wa.me/5599999999999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="fixed-btn whatsapp-btn" title="Fale conosco pelo WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-    <path d="M20.52 3.48a11.94 11.94 0 00-16.89 0 11.94 11.94 0 00-3.48 8.48c0 2.13.56 4.19 1.62 6.01L1 23l5.14-1.69a11.9 11.9 0 006.01 1.62c3.2 0 6.21-1.24 8.48-3.48a11.94 11.94 0 000-16.89zm-8.33 15.55a9.53 9.53 0 01-5.16-1.54l-.37-.23-3.06 1 1-3.02-.24-.39a9.59 9.59 0 01-1.54-5.15 9.54 9.54 0 1115.34 6.74 9.45 9.45 0 01-5.97 1.58zm5.01-7.02c-.27-.14-1.57-.78-1.82-.86-.25-.08-.44-.14-.62.14s-.71.86-.87 1.04-.32.21-.6.07a7.23 7.23 0 01-2.13-1.31 8.27 8.27 0 01-1.53-1.9c-.16-.28 0-.43.13-.57.13-.13.28-.33.43-.5.14-.17.19-.28.29-.47a.74.74 0 00-.04-.55c-.07-.16-.62-1.5-.85-2.06-.22-.54-.45-.47-.62-.48a1.35 1.35 0 00-.52-.01c-.17 0-.44.06-.67.32s-.87.85-.87 2.07c0 1.22.89 2.4 1.02 2.57.14.18 1.76 2.7 4.27 3.78a4.49 4.49 0 001.97.5c.83 0 1.61-.34 2.06-.69a2.15 2.15 0 00.65-1.55c0-.47-.18-.82-.44-1.06z"></path>
-  </svg>
-</a>
+  <div>
+    <h2>Sobre a Loja</h2>
+    <p>Sou Edson, trabalho com design e tecnologia ajudando pequenos negócios a venderem mais com comunicação profissional acessível.</p>
+  </div>
 
-<a href="https://instagram.com/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="fixed-btn instagram-btn" title="Siga-nos no Instagram">
-  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-    <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zm8.25 2.5a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"></path>
-  </svg>
-</a>
+  <div class="founder">
+    <img src="img/owner.jpg">
+    <p><strong>Edson</strong><br>Fundador</p>
+  </div>
+
+</div>
+</section>
+
+<section id="contact" class="section contact">
+<h2>Fale Conosco</h2>
+
+<form>
+  <input type="text" placeholder="Seu nome" required>
+  <input type="tel" placeholder="WhatsApp" required>
+  <textarea placeholder="Mensagem"></textarea>
+  <button class="btn btn-primary">Enviar pelo WhatsApp</button>
+</form>
+
+</section>
+
+<footer class="footer">
+<p>© 2025 • ED Art&Mídia</p>
+</footer>
+
+<!-- BOTÕES FLUTUANTES -->
+<a class="float-btn whatsapp" href="https://wa.me/5513996305218" target="_blank">Whats</a>
+<a class="float-btn instagram" href="https://instagram.com/seuperfil" target="_blank">Insta</a>
+
 </body>
 </html>
